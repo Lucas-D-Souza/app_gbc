@@ -20,6 +20,7 @@ idf_component_register(
         "fatfs"
         "nvs_flash"
         "esp_timer"
+        "json"
 )
 
 set_source_files_properties(${GNUBOY_SRCS} PROPERTIES COMPILE_FLAGS "-Wno-error -Wno-implicit-function-declaration -Wno-int-conversion")
