@@ -746,7 +746,7 @@ extern "C" void app_main(void) {
 
     // Lê a versão do JSON e atualiza a tela na mesma hora
     char current_ver[16];
-    get_app_version_from_sd("updater", current_ver, sizeof(current_ver));
+    get_app_version_from_sd("gbc", current_ver, sizeof(current_ver));
     
     if (bsp_display_lock(pdMS_TO_TICKS(100))) {
         if(lbl_splash_version) {
